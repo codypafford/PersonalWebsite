@@ -1,0 +1,73 @@
+
+
+.my_float{
+    float: left;
+    border-radius: 25px;
+    margin-right: 150px;
+    width:auto; /* you can use % */
+    max-width: 345px;
+    height: auto;
+}
+
+
+.clear{
+    clear: left;
+}
+
+.default-row-spacer{
+    margin-bottom:10px;
+}
+.default-spacer{
+    margin-left:20px;
+}
+.large-row-spacer{
+    margin-bottom:20px;
+}
+
+.lastletter{
+    color: red;
+}
+
+a.none{
+    text-decoration: none;
+}
+
+img.resize {
+    max-width: 90%;
+    max-height: 90%;
+
+}
+
+div.stay {
+    position: static;
+}
+
+.myShadow {
+    text-shadow: 1px 2px 3px #666;
+}
+
+.margin{
+    padding-top: 50px;
+}
+/*changes font size*/
+li *:not(a) {
+    font-size: small;
+}
+
+
+/*------------------stats page-----------------------------*/
+#p3header{
+    color: #5d33ff;
+    font-family: "Ubuntu Mono", sans-serif;
+}
+
+#p3bg{
+    color: #5d33ff;
+    font-family: "Ubuntu Mono", sans-serif;
+
+}
+
+#p3_footer, #p4_footer {
+    position:absolute;
+    bottom:5px;
+}

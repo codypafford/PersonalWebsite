@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Cody Pafford</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-image: url("images/mtn.jpg");
+    }
+
+    .mySlides {
+        display: none
+    }
+    .slides {
+        display: none
+    }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY PROJECTS</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="document.getElementById('ticketModal').style.display='block'">MY RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                <a href="#" class="w3-bar-item w3-button">Extras</a>
+                <a href="#" class="w3-bar-item w3-button">Media</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                class="fa fa-search"></i></a>
+    </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MY PROJECTS</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="document.getElementById('ticketModal').style.display='block'">MY RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<br>
+<div>
+    <img class="my_float" src="images/me1.jpg">
+</div>
+<br>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <div class="margin">
+        <!-- Automatic Slideshow Images ---------------------------------------------------------------------------------->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="images/dev.png" class="resize w3-padding-32">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3></h3>
+                <p><b></b></p>
+            </div>
+        </div>
+        <!-- <div class="mySlides w3-display-container w3-center">
+           <img src="images/creative.png" alt="hardworking">
+           <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+             <h3></h3>
+             <p><b></b></p>
+           </div>
+         </div>-->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="images/student1.png" class="resize w3-padding-32">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3></h3>
+                <p><b></b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="aboutme">
+        <h2 class="w3-wide">I am Cody Pafford</h2>
+        <div>
+            <!-- Automatic Slideshow Images ---------------------------------------------------------------------------------->
+            <div class="slides w3-display-container w3-center">
+                <p class="w3-opacity"><i>Student of Computer Science</i></p>
+            </div>
+            <div class="slides w3-display-container w3-center">
+                <p class="w3-opacity"><i>Hardworking</i></p>
+            </div>
+            <div class="slides w3-display-container w3-center">
+                <p class="w3-opacity"><i>Creative</i></p>
+            </div>
+            <div class="slides w3-display-container w3-center">
+                <p class="w3-opacity"><i>Dedicated</i></p>
+            </div>
+        </div>
+        <p class="w3-justify">Hello, my name is Cody Pafford and I am senior at the University of North Florida. I am a
+            hardworking individual with his goals set high. I will be graduating from UNF in the Spring of 2020 with my
+            bachelor's degree in Computer Science. I already have 6 months experience as a quality assurance tester as well as my current position as a software
+            development intern for the company <a href="https://www.smt.com/" target="_blank">SportsMedia Technology</a>.
+        </p>
+        <p class="w3-justify">I have worked on countless projects whether it be personal projects, school projects, or
+            work projects. I
+            was the developer for the 2019 NCAA Tennis College Championships on site graphics and scoreboards. I had a
+            hand in adding a fully automated production to the 2019 Citi Open as well as the entire functionality for a
+            cycled-schedule that aired on the TennisChannel. Everyday I strive to learn more and these projects mark
+            just the beginning of my journey.</p>
+        <div class="w3-row w3-padding-32">
+            <!--  <div class="w3-third">
+                 <p>Name</p>
+                 <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
+                      style="width:60%">
+             </div>
+             <div class="w3-third">
+                 <p>Name</p>
+                 <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
+                      style="width:60%">
+             </div>
+             <div class="w3-third">
+                 <p>Name</p>
+                 <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+             </div>-->
+        </div>
+    </div>
+    <!--Resume iframe -->
+    <div id="resumeModal" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container w3-black">
+                <span onclick="document.getElementById('resumeModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <iframe width="790" height="600" id="my_iframe" src="resume.pdf" frameborder="0" gesture="media" allow="encrypted-media" style="display: block" allowfullscreen></iframe>
+                <p>View or Download my Resume</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- The Project Section -->
+    <div class="w3-black" id="projects">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">MY PROJECTS</h2>
+            <p class="w3-opacity w3-center"><i>in various languages</i></p><br>
+
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">1 <span class="w3-tag w3-red w3-margin-left">  <a class="none" href="https://github.com/codypafford/Compiler" target="_blank">GO</a></span><span class="default-spacer">C MINUS COMPILER IN<span class="lastletter"> JAVA</span></span></li>
+                <li class="w3-padding">2 <span class="w3-tag w3-red w3-margin-left"><a class="none" href="https://github.com/codypafford/SIC-XE-Assembler" target="_blank">GO</a></span> <span
+                        class="default-spacer">SIC/XE ASSEMBLER IN<span class="lastletter"> JAVA</span></span></li>
+                <li class="w3-padding">3 <span class="w3-tag w3-red w3-margin-left"><a class="none" href="https://github.com/codypafford/SIC-XE-Assembler" target="_blank">GO</a></span> <span
+                        class="default-spacer">SIC/XE ASSEMBLER IN<span class="lastletter"> C#</span></span></li>
+                <li class="w3-padding">4 <span class="w3-tag w3-red w3-margin-left"><a class="none" href="https://github.com/codypafford/SicXE-Assembler-Python" target="_blank">GO</a></span> <span
+                        class="default-spacer">SIC/XE ASSEMBLER IN<span class="lastletter"> PYTHON</span></span></li>
+                <li class="w3-padding">5 <span class="w3-tag w3-red w3-margin-left"><a class="none" href="https://github.com/codypafford/SQL-Parser" target="_blank">GO</a></span> <span
+                        class="default-spacer">SQL PARSER IN<span class="lastletter"> YACC/BISON</span></span></li>
+                <li class="w3-padding">6 <span class="w3-tag w3-red w3-margin-left"><a class="none" href="pages/StatsCalc/stats_page.html" target="_blank">GO</a></span> <span
+                        class="default-spacer">STATISTICAL CALCULATOR</span></li>
+                <li class="w3-padding">7 <span class="w3-tag w3-red w3-margin-left"><a class="none" href="/movie_express/logon.php" target="_blank">GO</a></span> <span
+                        class="default-spacer">MOVIE SEARCH</span></li>
+
+            </ul>
+            <!--
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="images/me.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>New York</b></p>
+                        <p class="w3-opacity">Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets
+                        </button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Paris</b></p>
+                        <p class="w3-opacity">Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets
+                        </button>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>San Francisco</b></p>
+                        <p class="w3-opacity">Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets
+                        </button>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Modal -->
+<div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+            <h2 class="w3-wide"><i class="fa fa-file w3-margin-right"></i>My Resume</h2>
+        </header>
+        <div class="w3-container">
+            <button onclick="show_resume()" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">View <i
+                    class="fa fa-eye"></i></button>
+            <a href="resume.pdf" download>
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Download <i
+                        class="fa fa-download"></i></button>            </a>
+
+            <button class="w3-button w3-red w3-section"
+                    onclick="document.getElementById('ticketModal').style.display='none'">Close <i
+                    class="fa fa-remove"></i></button>
+            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- The Contact Section -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>...</i></p>
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Florida, US<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: 904-239-0382<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: codypafford6@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+            <form action="mail.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="images/bridge.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-linkedin w3-hover-opacity" onclick="redirect()"></i>
+</footer>
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+  //  carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Automatic Slideshow - change image every 4 seconds
+    var index = 0;
+    carousel2();
+
+    function carousel2() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(carousel2, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    function redirect() {
+        window.open(
+            'https://www.linkedin.com/in/cody-pafford-96856b108?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWTY5j854T2G0iToSKWnS2A%3D%3D',
+            '_blank' // <- This is what makes it open in a new window.
+        );
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    function show_resume() {
+        var modal = document.getElementById('ticketModal');
+        var my_iframe =  document.getElementById('resumeModal');
+        //close the modal
+        modal.style.display = "none";
+        //show my iframe
+        my_iframe.style.display = "block";
+
+    }
+</script>
+
+</body>
+</html>
+
